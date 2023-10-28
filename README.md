@@ -1,9 +1,19 @@
-<h1>ABP - Rota Gastronômica</h1>
-
-<p>Trabalho final da disciplina de front-end da turma de quarta-feira. (2023/2)</p>
+<div align="center"> 
+  <img src="https://raw.githubusercontent.com/gosttavo/abp-front-end/main/SnackRoute-logo.png">
+  <h1>SnackRoute - Rotas Gastronômicas :fork_and_knife:</h1>
+  <p>Trabalho final da disciplina de front-end da turma de quarta-feira. (2023/2)</p>
+</div>
 
 <div>
-  <h2>Grupo formado por:</h2>
+    <h2>Descrição do projeto:</h2>
+</div>
+
+<div>
+    <h2>Público alvo:</h2>
+</div>
+
+<div>
+  <h2>Equipe:</h2>
   <ul>
     <li>
       <a href="https://github.com/Santinoni15" target="_blank">Ana Júlia Santinoni</a>
