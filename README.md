@@ -3,7 +3,7 @@
 <p>Trabalho final da disciplina de front-end da turma de quarta-feira. (2023/2)</p>
 
 <div>
-  <p>Grupo formado por:</p>
+  <h2>Grupo formado por:</h2>
   <ul>
     <li>
       <a href="https://github.com/Santinoni15" target="_blank">Ana Júlia Santinoni</a>
@@ -21,8 +21,13 @@
 </div>
 
 <div style="display: inline_block">
-  <p>Tecnologias que utilizadas nesse projeto:</p>
+  <h2>Tecnologias que utilizadas nesse projeto:</h2>
   <img align="center" title="Typescript" alt="Typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg">
   <img align="center" title="React.js" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
   <img align="center" title="Tailwindcss" alt="TailwindCss" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg">
+</div>
+
+<div>
+  <h2>Diagrama do fluxo do projeto:</h2>
+  <img src="https://raw.githubusercontent.com/gosttavo/abp-front-end/main/diagrama-fluxo-abp.png">
 </div>
