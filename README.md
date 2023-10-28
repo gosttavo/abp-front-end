@@ -1,7 +1,7 @@
 <div align="center"> 
   <img src="https://raw.githubusercontent.com/gosttavo/abp-front-end/main/SnackRoute-logo.png">
   <h1>SnackRoute - Rotas Gastronômicas :fork_and_knife:</h1>
-  <p>Trabalho final da disciplina de front-end da turma de quarta-feira. (2023/2)</p>
+  <p>Trabalho final da disciplina de Front-End da turma de quarta-feira do segundo semestre de 2023</p>
 </div>
 
 <div>
@@ -10,6 +10,7 @@
 
 <div>
     <h2>Público alvo:</h2>
+    <p>O projeto destina-se a todas as pessoas que buscam encontrar excelentes locais para desfrutar de boa comida durante suas viagens ou sempre que desejam escapar da rotina.</p>
 </div>
 
 <div>
