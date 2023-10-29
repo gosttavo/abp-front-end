@@ -54,3 +54,8 @@
     <li>Perfil do restaurante: Será uma tela onde irá mostrar em detalhes as informações dos restaurantes, como pratos, preços e outros;</li>
   </ul>
 </div>
+
+<div>
+  <h2>Diferenciais do projeto:</h2>
+  <p>O SnackRoute permitirá a visualização de opções de bons restaurantes na localização onde o usuário informar, além disso, contará com um visual limpo e intuito facilitando a navegação. Em versões futuras, o SnackRoute proporcionará uma série de filtros onde os usuários poderão listar os restaurantes categorizados por tipo de comida, por temas e por preços.</p>
+</div>
