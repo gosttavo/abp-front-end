@@ -15,7 +15,7 @@ function App() {
           element: <Home />
         },
         {
-          path: '/perfilRestaurante',
+          path: '/restaurante/:id',
           element: <PerfilRestaurante />
         }
       ]

@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function RootLayout() {
     return (
@@ -13,12 +13,6 @@ export default function RootLayout() {
                         </Link>
                     </div>
                 </div>
-
-                <nav>
-                <NavLink to="/perfilRestaurante">
-                    Perfil Restaurante
-                </NavLink>
-                </nav>
             </header>
             <main className="mx-7 mt-40 flex-grow lg:mx-6">
                 <div className="mx-auto max-w-5xl">
