@@ -10,3 +10,8 @@ export interface Restaurante {
     nota: number,
     itemsCardapio: ItemsCardapio[]
 }
+
+export interface RestaurantesContextProps {
+    restaurantes: Restaurante[],
+    setRestaurantes: (restaurantes?: Restaurante[]) => void
+}
