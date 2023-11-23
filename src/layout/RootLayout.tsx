@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 export default function RootLayout() {
     return (
@@ -12,6 +12,20 @@ export default function RootLayout() {
                             <span className="font-bold text-2xl">Snack Router</span>
                         </Link>
                     </div>
+                    <nav className="flex justify-between mt-2">
+                        <NavLink 
+                            className="mr-4 block font-medium" 
+                            to="/cidades"
+                        >
+                            Cidades
+                        </NavLink>
+                        <NavLink 
+                            className="mr-4 block font-medium"
+                            to="/restaurantes"
+                        >
+                            Restaurantes
+                        </NavLink>
+                    </nav>
                 </div>
             </header>
             <main className="mx-7 mt-40 flex-grow lg:mx-6">
