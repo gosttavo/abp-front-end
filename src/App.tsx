@@ -18,6 +18,11 @@ function App() {
           path: '/restaurante/:id',
           element: <PerfilRestaurante />
         }
+        ,
+        {
+          path: '/cidades',
+          element: <PerfilRestaurante />
+        }
       ]
     }
   ]);
