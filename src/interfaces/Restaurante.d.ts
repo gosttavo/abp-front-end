@@ -1,3 +1,6 @@
+import { Cidade } from "./Cidade"
+import { ItemsCardapio } from "./ItemsCardapio"
+
 export interface Restaurante {
     id: number,
     nome: string,
@@ -8,7 +11,8 @@ export interface Restaurante {
     imagem: string,
     categoria: string,
     nota: number,
-    itemsCardapio: ItemsCardapio[]
+    itemsCardapio?: ItemsCardapio[],
+    cidade?: Cidade
 }
 
 export interface RestaurantesContextProps {

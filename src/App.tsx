@@ -3,6 +3,7 @@ import Home from "./routes/Home";
 import RootLayout from "./layout/RootLayout";
 import PerfilRestaurante from "./routes/PerfilRestaurante";
 import Restaurantes from "./routes/Restaurantes";
+import PaginaNaoEncontrada from "./routes/PaginaNaoEncontrada";
 
 function App() {
 
@@ -22,13 +23,16 @@ function App() {
         {
           path: '/restaurantes/:id',
           element: <PerfilRestaurante />
-        }
-        ,
+        },
         {
           path: '/cidades',
           element: <PerfilRestaurante />
         }
       ]
+    },
+    {
+      path: '*',
+      element: <PaginaNaoEncontrada />
     }
   ]);
 

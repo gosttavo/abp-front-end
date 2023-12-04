@@ -1,20 +1,18 @@
-export default function ItemCardapio() {
+import { ItemsCardapio } from "../interfaces/ItemsCardapio";
+
+export default function ItemCardapio(props: ItemsCardapio) {
     return (
         <>
-            <div className='flex justify-between bg-gray-100 rounded-md p-6 w-70'>
+            <div className='flex justify-between bg-gray-100 rounded-md p-6 w-70 shadow hover:shadow-lg transition'>
                 <div className="flex flex-col">
                     <p className='text-2xl font-semibold'>
-                        Big Mac
+                        {props.nome}
                     </p>
                     <p className="text-sm text-gray-600 break-words overflow-auto mt-2">
-                        Dois hambúrgueres
-                        Alface, queijo, molho especial,
-                        Cebola, Picles
-                        Num pão com gergelim
-                        É o Big Mac (Big Mac).
+                        {props.descricao}
                     </p>
                     <p className="mt-2">
-                        A partir de <span className='font-semibold'>R$ 29,90</span>
+                        A partir de <span className='font-semibold'>R$ {props.preco}</span>
                     </p>
                 </div>
             </div>
