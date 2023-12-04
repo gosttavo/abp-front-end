@@ -1,12 +1,28 @@
-import { Link } from "react-router-dom";
+import RestauranteCard from "../components/RestauranteCard";
+import { RestaurantesList } from "../database/RestaurantesList"; "../database/RestaurantesList";
 
 export default function Restaurantes() {
+    const restaurantes = RestaurantesList;
+
     return (
         <>
-            <Link 
-                className="font-bold" 
-                to='/restaurantes/2'
-            >McDonalds Criciúma</Link>
+            <div className='container'>
+                <div className="grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-8">
+                    {
+                        restaurantes.map((restaurante) => (
+                            <RestauranteCard
+                                key={restaurante.id}
+                                id={restaurante.id}
+                                nome={restaurante.nome}
+                                horario={restaurante.horario}
+                                imagem={restaurante.imagem}
+                                nota={restaurante.nota}
+                                categoria={restaurante.categoria}
+                            />
+                        ))
+                    }
+                </div>
+            </div>
         </>
     )
 }

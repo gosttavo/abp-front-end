@@ -4,5 +4,4 @@ export interface ItemsCardapio {
     descricao: string;
     preco: number;
     imagem: string;
-    categoria: string;
 }
