@@ -24,6 +24,10 @@ function App() {
           path: '/restaurantes/:id',
           element: <PerfilRestaurante />
         },
+        {
+          path: '/cidades',
+          element: <PerfilRestaurante />
+        }
       ]
     },
     {
