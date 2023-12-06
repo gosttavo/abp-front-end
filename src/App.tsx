@@ -4,6 +4,10 @@ import RootLayout from "./layout/RootLayout";
 import PerfilRestaurante from "./routes/PerfilRestaurante";
 import Restaurantes from "./routes/Restaurantes";
 import PaginaNaoEncontrada from "./routes/PaginaNaoEncontrada";
+import Login from "./routes/Login";
+import { AuthProvider } from "./context/auth/AuthContext";
+import Register from "./routes/Register";
+import PerfilUsuario from "./routes/PerfilUsuario";
 
 function App() {
 
@@ -27,8 +31,20 @@ function App() {
         {
           path: '/cidades',
           element: <PerfilRestaurante />
+        },
+        {
+          path: '/perfil',
+          element: <PerfilUsuario />
         }
       ]
+    },
+    {
+      path: '/login',
+      element: <Login />
+    },
+    {
+      path: '/register',
+      element: <Register />
     },
     {
       path: '*',
@@ -38,7 +54,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
     </>
   )
 }

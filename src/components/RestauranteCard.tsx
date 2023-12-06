@@ -9,13 +9,14 @@ interface RestauranteCardProps {
   imagem: string;
   nota: number;
   categoria: string;
+  size?: string;
 }
 
 export default function RestauranteCard(props: RestauranteCardProps) {
   return (
     <>
       <Link to={`/restaurantes/${props.id}`}>
-        <div className="w-72 flex justify-between bg-gray-100 rounded-md p-6 shadow hover:shadow-lg transition">
+        <div className={`${props.size} flex justify-between bg-gray-100 rounded-md p-6 shadow hover:shadow-lg transition`}>
           <div className="text-ellipsis overflow-hidden">
             <p className="flex" title={props.nome}>
               <span className="text-2xl font-semibold whitespace-nowrap overflow-ellipsis">
