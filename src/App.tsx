@@ -8,6 +8,7 @@ import PaginaNaoEncontrada from "./routes/PaginaNaoEncontrada";
 import Login from "./routes/Login";
 import Register from "./routes/Register";
 import PerfilUsuario from "./routes/PerfilUsuario";
+import Cidade from "./routes/Cidade";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/restaurantes" element={<Restaurantes />} />
             <Route path="/restaurantes/:id" element={<PerfilRestaurante />} />
-            <Route path="/cidades" element={<PerfilRestaurante />} />
+            <Route path="/cidades" element={<Cidade/>} />
             <Route path="/perfil" element={<PerfilUsuario />} />
           </Route>
           <Route path="/login" element={<Login />} />
