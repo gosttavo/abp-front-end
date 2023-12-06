@@ -1,0 +1,1 @@
+export const SnackRouterPath = 'https://gosttavo.github.io/snack-router/'
