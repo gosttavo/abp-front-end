@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "@mdi/react";
 import { mdiStar } from "@mdi/js";
 import ItemCardapio from "../components/ItemCardapio";
