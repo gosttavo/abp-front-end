@@ -81,12 +81,12 @@ export default function RootLayout() {
                 </div>
             </header>
 
-            <main className="mx-7 mt-40 flex-grow lg:mx-6">
+            <main className="mx-7 mt-40 mb-20 flex-grow min-h-screen lg:mx-6">
                 <div className="mx-auto max-w-7xl">
                     <Outlet />
                 </div>
             </main>
-            <footer className="fixed bottom-0 w-full">
+            <footer className="bottom-0 w-full">
                 <div className="text-center bg-purple-500 py-6">
                     <p className="text-white text-sm font-semibold">
                         &copy; 2023 Snack Router
