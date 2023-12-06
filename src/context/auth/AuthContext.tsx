@@ -41,6 +41,7 @@ export function AuthProvider(props: any)  {
             localStorage.setItem("auth", JSON.stringify(savedUser));
         } else {
             alert("E-mail ou senha incorretos");
+            return;
         }
     };
 
