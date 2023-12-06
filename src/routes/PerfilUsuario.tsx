@@ -11,7 +11,18 @@ export default function PerfilUsuario() {
 
         if (isUpdateUserFormOpen) setIsUpdateUserFormOpen(false);
         if (!isUpdateUserFormOpen) setIsUpdateUserFormOpen(true);
-        
+    }
+
+    function doUpdateUser(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+
+        const formData = new FormData(event.currentTarget);
+        const nome = formData.get('nome') as string;
+        const sobrenome = formData.get('sobrenome') as string;
+        const email = formData.get('email') as string;
+        const senha = formData.get('senha') as string;
+
+        auth.updateUser(auth?.usuario?.id, nome, sobrenome, email, senha);
     }
 
     return (
@@ -38,7 +49,7 @@ export default function PerfilUsuario() {
                         <FormCadastro 
                         titulo='Editar Conta'
                         btnTexto='Editar'
-                        function={auth.updateUser}
+                        function={doUpdateUser}
                         hasLogo={false}
                         ></FormCadastro> 
                     </div>

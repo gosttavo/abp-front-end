@@ -6,6 +6,7 @@ const AuthContext = createContext([[], () => {}]);
 interface AuthContextProps {
     usuario: Usuario | null;
     register: (nome: string, sobrenome: string, email: string, senha: string) => void;
+    updateUser: (id: string, nome: string, sobrenome: string, email: string, senha: string) => void;
     login: (email: string, senha: string) => void;
     logout: () => void;
 }
@@ -32,6 +33,22 @@ export function AuthProvider(props: any)  {
         localStorage.setItem("auth", JSON.stringify(newUser));
     };
 
+    const updateUser = (id: string, nome: string, sobrenome:string, email: string, senha: string) => {
+        if (user?.id === id) {
+            const updatedUser: Usuario = { 
+                id,
+                nome, 
+                sobrenome,
+                email, 
+                senha 
+            };
+    
+            setUser(updatedUser);
+            localStorage.setItem("auth", JSON.stringify(updatedUser));
+        }
+    }
+        
+
     const login = (email: string, senha: string) => {
         const authData = localStorage.getItem("auth");
         const savedUser = authData ? JSON.parse(authData) : null;
@@ -53,6 +70,7 @@ export function AuthProvider(props: any)  {
         usuario: user,
         register,
         login,
+        updateUser,
         logout
     };
 
