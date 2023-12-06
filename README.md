@@ -1,13 +1,13 @@
 <div align="center"> 
   <img src="https://raw.githubusercontent.com/gosttavo/abp-front-end/main/SnackRoute-logo.png">
-  <h1>SnackRoute - Rotas Gastronômicas :pushpin::fork_and_knife:</h1>
+  <h1>SnackRouter - Rotas Gastronômicas :pushpin::fork_and_knife:</h1>
   <p>Trabalho final da disciplina de Front-End da turma de quarta-feira do segundo semestre de 2023</p>
 </div>
 
 <div>
   <h2>Descrição do projeto:</h2>
   <p>
-    O SnackRoute é um sistema web que permitirá que você veja os melhores restaurantes e bares em sua região, possibilitando que você planeje sua rota da maneira que desejar! (mas só em Criciúma, por enquanto)
+    O SnackRouter é um sistema web que permitirá que você veja os melhores restaurantes e bares em sua região, possibilitando que você planeje sua rota da maneira que desejar! (mas só em Criciúma, por enquanto)
   </p>
   <p>
   Nossa principal meta é disponibilizar uma solução descomplicada e eficaz para aqueles que estão viajando ou desejam escapar da rotina, permitindo-lhes desfrutar de uma excelente experiência gastronômica em sua cidade.
@@ -57,7 +57,7 @@
 
 <div>
   <h2>Diferenciais do projeto:</h2>
-  <p>O SnackRoute permitirá a visualização de opções de bons restaurantes na localização onde o usuário informar, além disso, contará com um visual limpo e intuito facilitando a navegação. Em versões futuras, o SnackRoute proporcionará uma série de filtros onde os usuários poderão listar os restaurantes categorizados por tipo de comida, por temas e por preços.</p>
+  <p>O SnackRouter permitirá a visualização de opções de bons restaurantes na localização onde o usuário informar, além disso, contará com um visual limpo e intuito facilitando a navegação. Em versões futuras, o SnackRoute proporcionará uma série de filtros onde os usuários poderão listar os restaurantes categorizados por tipo de comida, por temas e por preços.</p>
 </div>
 
 <div>
