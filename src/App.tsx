@@ -9,6 +9,7 @@ import Login from "./routes/Login";
 import Register from "./routes/Register";
 import PerfilUsuario from "./routes/PerfilUsuario";
 import Cidade from "./routes/Cidade";
+import PerfilCidade from "./routes/PerfilCidade";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/restaurantes" element={<Restaurantes />} />
             <Route path="/restaurantes/:id" element={<PerfilRestaurante />} />
             <Route path="/cidades" element={<Cidade/>} />
+            <Route path="/cidades/:id" element={<PerfilCidade/>} />
             <Route path="/perfil" element={<PerfilUsuario />} />
           </Route>
           <Route path="/login" element={<Login />} />
