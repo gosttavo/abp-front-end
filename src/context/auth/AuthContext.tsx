@@ -36,11 +36,11 @@ export function AuthProvider(props: any)  {
     const updateUser = (id: string, nome: string, sobrenome:string, email: string, senha: string) => {
         if (user?.id === id) {
             const updatedUser: Usuario = { 
-                id,
-                nome, 
-                sobrenome,
-                email, 
-                senha 
+                id: user?.id,
+                nome: nome ? nome : user?.nome, 
+                sobrenome: sobrenome ? sobrenome : user?.sobrenome,
+                email: email ? email : user?.email, 
+                senha: senha ? senha : user?.senha
             };
     
             setUser(updatedUser);

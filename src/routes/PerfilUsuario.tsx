@@ -30,7 +30,7 @@ export default function PerfilUsuario() {
             <div className='bg-purple-500 text-white p-6 flex flex-col rounded-md'>
                 <div className='flex justify-between'>
                     <p className='font-bold text-3xl'>
-                        {auth?.usuario?.nome} {auth?.usuario?.sobrenome}
+                        <span className="mr-1">{auth?.usuario?.nome}</span> {auth?.usuario?.sobrenome}
                     </p>
                     <button 
                     onClick={doOpenUpdateUserForm}
